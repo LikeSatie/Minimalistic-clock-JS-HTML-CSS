@@ -7,7 +7,7 @@ const nowBackground = new Date();
 const hoursBackground = nowBackground.getHours();
 const backgroundImage = document.querySelector('body');
 
-if (hoursBackground < 7) {
+if (hoursBackground > 6 && hoursBackground < 17) {
   backgroundImage.style.background =
     "url('background-day.jpg') center / cover no-repeat";
 } else {
